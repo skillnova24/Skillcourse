@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillNova24x7 - Secure Courses</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1f1f1f;
+      color: #00adb5;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background: #232323;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #eeeeee;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .course {
+      background: #1e1e1e;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .buy-btn {
+      background: #00adb5;
+      color: #121212;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    .qr {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .qr img {
+      width: 250px;
+      border: 2px solid #00adb5;
+      border-radius: 10px;
+    }
+    #downloadLink {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SkillNova24x7</h1>
+  <p>Buy & Unlock Professional Trading Courses</p>
+</header>
+
+<section class="course">
+  <h2>Stock Market Basics</h2>
+  <p>Investing from scratch for beginners</p>
+
+  <div class="qr">
+    <p>Pay via UPI to <strong>karamjeetji12345-1@oksbi</strong></p>
+    <img src="upi_qr.jpg" alt="UPI QR Code">
+    <p style="margin-top: 10px;"><button class="buy-btn" onclick="unlockLink()">I Have Paid</button></p>
+    <p id="downloadLink"><a class="buy-btn" href="https://drive.google.com/drive/folders/1gCv0M8UhN-Nr8ezLmqFVsMQD07ogkJNz" target="_blank">Access Course</a></p>
+  </div>
+</section>
+
+<script>
+  function unlockLink() {
+    document.getElementById("downloadLink").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
